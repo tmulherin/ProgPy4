@@ -1,4 +1,4 @@
-#!c:\Python\Python.exe
+#!/usr/bin/python3.3
 
 """
 list the modules imported
