@@ -1,6 +1,6 @@
-#!python
+#!/usr/bin/python3.3
 """
-Implement a GUI for viewiing and updating class instances stored in a shelve;
+Implement a GUI for viewing and updating class instances stored in a shelve;
 the shelve lives on the machine this scriot runs on, as 1 or more local files.
 """
 
@@ -16,7 +16,11 @@ def makeWidgets():
     global entries
     window = Tk()
     window.title('People Shelve')
-    window.iconbitmap(path.abspath('../../text_x_python.ico'))
+#    window.iconbitmap(path.abspath(r'../../images/python.ico'))
+#    imgpath = r"@/home/tim/dev/ProgPy4/01_Preview/python.gif"
+#    img = PhotoImage(file=imgpath)
+    window.iconbitmap(r"@python.xbm")
+#    window.tk.call('wm', 'iconphoto', window._w, img)
     form = Frame(window)
     form.pack()
     entries = {}
