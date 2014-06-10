@@ -1,13 +1,15 @@
 #!/usr/bin/env python3.3
 
 def getopts(argv):
-    opts = {}
-    while argv:
+    opts = []
+    while len(argv) > 0:
         if argv[0][0] == '-':
-            opts[argv[0]] = argv[1]
-            argv = argv[2:]
-        else: argv = argv[1:]
-        
+            opts.append(argv[0])
+ 
+        if len(argv) > 1:
+            argv = argv[1:]
+        else: argv = []
+      
     return opts
 
     
@@ -18,3 +20,5 @@ if __name__ == '__main__':
     if '-i' in myArgs:
         print(myArgs['-i'])
     print(myArgs)
+
+    
