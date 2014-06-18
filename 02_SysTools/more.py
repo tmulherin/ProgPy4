@@ -1,4 +1,4 @@
-#!c:\Python\Python.exe
+#!/usr/bin/env python3.3
 
 """
 split and interactively page a string or file of text
@@ -12,7 +12,7 @@ def more(text, numlines=15):
         for line in chunk: print(line)
         if lines and input('More?') not in ('Y', 'y'): break
 
-    fred = input('Press any key to continue')
+    input('Press any key to continue')
 
 if __name__ == '__main__':
     import sys                                  #-> when run not when imported
