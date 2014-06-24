@@ -1,5 +1,7 @@
 #!/usr/bin/env python3.3
-
+'''
+    re-imported
+'''
 import os
 
 for(dirname, subshere, fileshere) in os.walk('.'):
